@@ -44,7 +44,7 @@ Content-Type: application/json
 
 {
   "executionUnit": {
-    "href": "https://raw.githubusercontent.com/tjellicoe-tpzuk/temp_ades_convert/main/convert-url-app.cwl",
+    "href": "https://raw.githubusercontent.com/tjellicoe-tpzuk/temp_ades_convert/main/printArgs.cwl",
     "type": "application/cwl"
   }
 }
@@ -59,21 +59,21 @@ Accept: application/json
 ###
 
 # @name getProcessDetails
-GET https://{{ades}}/{{user}}/wps3/processes/convert-url-0_1_2 HTTP/1.1
+GET https://{{ades}}/{{user}}/wps3/processes/print_args-0_0_2 HTTP/1.1
 Authorization: Bearer {{idToken}}
 Accept: application/json
 
 ###
 
 # @name deleteProcess
-DELETE https://{{ades}}/{{user}}/wps3/processes/convert-url-0_1_2 HTTP/1.1
+DELETE https://{{ades}}/{{user}}/wps3/processes/print_args-0_0_2 HTTP/1.1
 Authorization: Bearer {{idToken}}
 Accept: application/json
 
 ###
 
 # @name executeProcess
-POST https://{{ades}}/{{user}}/wps3/processes/convert-url-0_1_2/execution HTTP/1.1
+POST https://{{ades}}/{{user}}/wps3/processes/print_args-0_0_2/execution HTTP/1.1
 # Authorization: Bearer {{idToken}}
 Accept: application/json
 Content-Type: application/json
@@ -81,9 +81,7 @@ Prefer: respond-async
 
 {
   "inputs": {
-      "fn": "resize",
-      "url": "https://raw.githubusercontent.com/tjellicoe-tpzuk/python_convert/main/cat.png",
-      "size": "25%"
+
   },
   "response":"raw"
 }
