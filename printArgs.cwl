@@ -33,7 +33,7 @@ $graph:
       outFile:
         type: File
         outputBinding:
-          glob: "*.txt"
+          glob: "*.json"
     requirements:
       DockerRequirement:
         dockerPull: tjellicoetpzuk/print:latest
