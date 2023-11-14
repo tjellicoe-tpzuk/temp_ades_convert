@@ -1,5 +1,6 @@
 cwlVersion: v1.2
-s:version: 0.0.2
+
+s:softwareVersion: 0.0.2
 
 $graph:
   # Workflow entrypoint
