@@ -23,4 +23,4 @@ $graph:
     outputs: []
     requirements:
       DockerRequirement:
-        dockerPull: print:latest
+        dockerPull: tjellicoetpzuk/print:latest
